@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1: Dynamic Quiz</title>
+    <link rel="stylesheet" href="styleSheet1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Dynamic Quiz</h1>
+
+        <div id="quiz-container">
+            <div class="question-card">
+                <h3>1. What does HTML stand for?</h3>
+                <input type="text" id="q1" placeholder="Your answer...">
+                <div class="feedback" id="feedback1"></div>
+            </div>
+
+            <div class="question-card">
+                <h3>2. Which keyword is used to declare a constant in JavaScript?</h3>
+                <input type="text" id="q2" placeholder="Your answer...">
+                <div class="feedback" id="feedback2"></div>
+            </div>
+
+            <div class="question-card">
+                <h3>3. What is the output of: typeof 42?</h3>
+                <input type="text" id="q3" placeholder="Your answer...">
+                <div class="feedback" id="feedback3"></div>
+            </div>
+
+            <div class="question-card">
+                <h3>4. Which method is used to access an element by ID?</h3>
+                <input type="text" id="q4" placeholder="Your answer...">
+                <div class="feedback" id="feedback4"></div>
+            </div>
+
+            <div class="question-card">
+                <h3>5. What does BOM stand for?</h3>
+                <input type="text" id="q5" placeholder="Your answer...">
+                <div class="feedback" id="feedback5"></div>
+            </div>
+
+            <div class="button-group">
+                <button onclick="checkAnswers()" class="btn submit">Submit Quiz</button>
+                <button onclick="resetQuiz()" class="btn reset">Reset Quiz</button>
+            </div>
+        </div>
+
+        <div id="result-container" class="result-container">
+            <h2>Your Score: <span id="score">0</span>/5</h2>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
